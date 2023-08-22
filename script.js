@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  // After submission, add to tasks
   document.querySelector('form').onsubmit = () => { 
    
     const taskValue = document.querySelector('#task-input').value;
