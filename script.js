@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // By default, submit button is disabled 
   document.querySelector('#submit').disabled = true; 
 
-
+  
   // After key is pressed and there is text, submit button is enabled
   document.querySelector('#task-input').onkeyup = () => { 
     if(document.querySelector('#task-input').value.length > 0) { 
