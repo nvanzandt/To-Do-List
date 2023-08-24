@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const task = document.createElement('p');
     const deleteButton = document.createElement('button');
     
-    li.setAttribute("id", "li")
-    task.setAttribute("id", "task")
-    deleteButton.setAttribute("id", "delete-button")
+    li.setAttribute('id', 'li')
+    task.setAttribute('id', 'task')
+    deleteButton.setAttribute('id', 'delete-button')
 
     task.innerHTML = taskValue; 
     deleteButton.innerHTML = 'X';
