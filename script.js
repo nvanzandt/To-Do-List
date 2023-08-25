@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() { 
 
-  // load tasks from local storage
+  // Load tasks from local storage
   document.querySelector('#tasks').innerHTML = localStorage.getItem('#tasks');
 
   // By default, submit button is disabled 
@@ -41,20 +41,20 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('#task-input').value = '';
     document.querySelector('#submit').disabled = true; 
 
-    // save tasks to local storage 
+    // Save tasks to local storage 
     localStorage.setItem('#tasks', document.querySelector('#tasks').innerHTML);
 
-    // stop form from submitting 
+    // Stop form from submitting 
     return false; 
   }
 
-  // if delete button is clicked, remove the task 
+  // If delete button is clicked, remove the task 
   document.addEventListener('click', function(event) {
     element = event.target;
     if (element.id === 'delete-button') {
       element.parentElement.remove();
     }
-    // save tasks to local storage 
+    // Save tasks to local storage 
     localStorage.setItem('#tasks', document.querySelector('#tasks').innerHTML);
   }
   )
